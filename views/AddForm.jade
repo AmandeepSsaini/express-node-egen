@@ -1,0 +1,30 @@
+extend layout
+
+block content
+  .main-form-content
+    .main_tagline-store
+      h1 Danng! Thats Delicious store!!!
+    .form-addition
+      form(action='/add' class='form-add-content',method='post')
+        div(data-role='fieldcontain')
+            label(for='Name') Name
+            input(id='name',type='text',value='',name='name')
+        div(id='hiddendiv',data-role='fieldcontain')
+            label(for='hidden_password') Description
+            textarea(id='hidden_password',type='text',value='',placeholder='',name='password2')    
+
+        .file_upload
+          label(for="fileupload") Upload  file  (JPEG, PNG)
+          input(id="fileupload-form",type='file')    
+
+        .check_boxes  
+          label(for='wifi') Wifi
+          input(id='checkbox',type='checkbox')                                  
+          label(for='ope-late') Open Late
+          input(id='checkbox',type='checkbox')                                  
+          label(for='veggie') Vegeterian
+          input(id='checkbox',type='checkbox')                                  
+          label(for='License') License 
+          input(id='checkbox',type='checkbox')
+        .button_submit
+          input(type='submit', class='submit-add-store',value='SUBMIT',data-transition='fade', data-theme='c')

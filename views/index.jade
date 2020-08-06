@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  section#home.slider(data-stellar-background-ratio='0.5')
+      .owl-carousel.owl-theme
+        .item.item-first
+          .caption
+            .container
+              .col-md-8.col-sm-12
+                h3 Eatery Cafe &amp; Restaurant
+                h1 Our mission is to provide an unforgettable experience
+                a.section-btn.btn.btn-default.smoothScroll(href='/') Meet our chef
+
+  section#about(data-stellar-background-ratio='0.5')
+    .container
+      .col-md-6.col-sm-12
+        .about-info
+          .section-title.wow.fadeInUp(data-wow-delay='0.2s')
+            h2 We&apos;ve been Making The Delicious Foods Since 1999
+          .wow.fadeInUp(data-wow-delay='0.4s')
+            p
+              | Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.
+            p
+              | Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac, posuere tristique magna. You can use this template for your cafe or restaurant website. Please tell your friends about 
+              | . Thank you.
+      .col-md-6.col-sm-12
+        .wow.fadeInUp.about-image(data-wow-delay='0.6s')
+          img.img-responsive(src='images/about-image.jpg' alt='')
+
+  section#menu(data-stellar-background-ratio='0.5')
+    .container
+      .col-md-12.col-sm-12
+        .section-title.wow.fadeInUp(data-wow-delay='0.1s')
+          h2 Our Menus
+          h4 Tea Time &amp; Dining
+      .col-md-4.col-sm-6
+        // MENU THUMB
+        .menu-thumb
+          a.image-popup(href='images/menu-image1.jpg' title='American Breakfast')
+            img.img-responsive(src='images/menu-image1.jpg' alt='')
+            .menu-info
+              .menu-item
+                h3 American Breakfast
+      .col-md-4.col-sm-6
+        // MENU THUMB
+        .menu-thumb
+          a.image-popup(href='images/menu-image2.jpg' title='Self-made Salad')
+            img.img-responsive(src='images/menu-image2.jpg' alt='')
+            .menu-info
+              .menu-item
+                h3 Self-made Salad
+      .col-md-4.col-sm-6
+        // MENU THUMB
+        .menu-thumb
+          a.image-popup(href='images/menu-image3.jpg' title='Chinese Noodle')
+            img.img-responsive(src='images/menu-image3.jpg' alt='')
+            .menu-info
+              .menu-item
+                h3 Chinese Noodle
+      .col-md-4.col-sm-6
+        // MENU THUMB
+        .menu-thumb
+          a.image-popup(href='images/menu-image4.jpg' title='Rice Soup')
+            img.img-responsive(src='images/menu-image4.jpg' alt='')
+            .menu-info
+              .menu-item
+                h3 Rice Soup
+      .col-md-4.col-sm-6
+        // MENU THUMB
+        .menu-thumb
+          a.image-popup(href='images/menu-image5.jpg' title='Project title')
+            img.img-responsive(src='images/menu-image5.jpg' alt='')
+            .menu-info
+              .menu-item
+                h3 Deli Burger
+      .col-md-4.col-sm-6
+        // MENU THUMB
+        .menu-thumb
+          a.image-popup(href='images/menu-image6.jpg' title='Project title')
+            img.img-responsive(src='images/menu-image6.jpg' alt='')
+            .menu-info
+              .menu-item
+                h3 Big Flat Fried
+
+  
